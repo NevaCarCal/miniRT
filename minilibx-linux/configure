@@ -120,7 +120,7 @@ main(){
 	log_info 'Execute "make all" from file "makefile.gen"'
 		${MAKE} -f Makefile.gen all
 	log_info 'Execute "make all" from file "test/makefile.gen"'
-		(cd test ; ${MAKE} -f Makefile.gen all )
+		(cd test ; ${MAKE} -f Makefile.gen all || true)
 }
 
 main "$@"

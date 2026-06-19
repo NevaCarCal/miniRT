@@ -11,21 +11,21 @@ GNL_PATH = get_next_line
 PRINTF_PATH = ft_printf
 FT_PRINTF_LIB = $(PRINTF_PATH)/libftprintf.a
 
-INCLUDES = -I. -I$(MLX_PATH) -I$(GNL_PATH) -I$(PRINTF_PATH)
+INCLUDES = -Iheaders -I$(MLX_PATH) -I$(GNL_PATH) -I$(PRINTF_PATH)
 
 CFILES = \
-	error_free.c \
-	map.c \
-	checker.c \
-	main.c \
-	checker_utils.c \
-	ft_init.c \
-	ft_move.c \
-	flood_fill.c \
-	game.c \
-	raycast.c \
-	libft.c \
-	utils.c \
+	src/error_free.c \
+	src/map.c \
+	src/checker.c \
+	src/main.c \
+	src/checker_utils.c \
+	src/ft_init.c \
+	src/ft_move.c \
+	src/flood_fill.c \
+	src/game.c \
+	src/raycast.c \
+	src/libft.c \
+	src/utils.c \
 	$(GNL_PATH)/get_next_line.c \
 	$(GNL_PATH)/get_next_line_utils.c
 

@@ -36,7 +36,7 @@
 # define MAP_CHARS " 01NSEW"
 # define PLAYER_CHARS "NSEW"
 
-# include "minilibx-linux/mlx.h"
+# include "mlx.h"
 # include <stdlib.h>
 # include <stdio.h>
 # include <fcntl.h>
