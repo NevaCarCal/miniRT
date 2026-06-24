@@ -49,6 +49,12 @@ static void	frame_init(t_data *data)
 		handle_error(IMG_ERROR, data);
 }
 
+static int	expose_hook(t_data *data)
+{
+	render_frame(data);
+	return (0);
+}
+
 void	game_init(t_data *data)
 {
 	data->mlx = mlx_init();
@@ -60,6 +66,7 @@ void	game_init(t_data *data)
 	frame_init(data);
 	load_textures(data);
 	render_frame(data);
+	mlx_expose_hook(data->window, expose_hook, data);
 	mlx_hook(data->window, KEY_PRESS, 1L >> 0, key_hook, data);
 	mlx_hook(data->window, MOUSE_PRESS, 0, destroy_all, data);
 	data->game_over = false;
