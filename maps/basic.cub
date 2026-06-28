@@ -1,7 +1,7 @@
-NO rs/wall.xpm
-SO rs/wall.xpm
-WE rs/wall.xpm
-EA rs/wall.xpm
+NO rs/textures/north.xpm
+SO rs/textures/south.xpm
+WE rs/textures/west.xpm
+EA rs/textures/east.xpm
 
 F 40,70,90
 C 15,15,25

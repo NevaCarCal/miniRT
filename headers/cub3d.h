@@ -54,6 +54,13 @@ typedef struct s_img
 	int		endian;
 }				t_img;
 
+typedef struct s_texture
+{
+	t_img	img;
+	int		width;
+	int		height;
+}				t_texture;
+
 typedef enum s_errorlst
 {
 	PARAMETROS,
@@ -79,6 +86,7 @@ typedef struct s_data
 	void		*back;
 	void		*wall;
 	void		*player;
+	t_texture	textures[4];
 	t_img		frame;
 	char		*north_tex;
 	char		*south_tex;
@@ -119,6 +127,8 @@ int		destroy_all(t_data *data);
 int		ft_init(t_data *data, char **argv);
 
 int		key_hook(int keycode, t_data *data);
+
+void	load_textures(t_data *data);
 
 void	game_init(t_data *data);
 int		game_loop(t_data *data);

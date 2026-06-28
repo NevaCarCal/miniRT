@@ -31,6 +31,14 @@ static void	destruction(t_data *data)
 		mlx_destroy_image(data->mlx, data->wall);
 	if (data->player)
 		mlx_destroy_image(data->mlx, data->player);
+	if (data->textures[0].img.img)
+		mlx_destroy_image(data->mlx, data->textures[0].img.img);
+	if (data->textures[1].img.img)
+		mlx_destroy_image(data->mlx, data->textures[1].img.img);
+	if (data->textures[2].img.img)
+		mlx_destroy_image(data->mlx, data->textures[2].img.img);
+	if (data->textures[3].img.img)
+		mlx_destroy_image(data->mlx, data->textures[3].img.img);
 	if (data->frame.img)
 		mlx_destroy_image(data->mlx, data->frame.img);
 	if (data->window)
