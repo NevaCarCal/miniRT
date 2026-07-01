@@ -65,7 +65,7 @@ C R,G,B
 
 - Four texture paths (`NO`, `SO`, `WE`, `EA`) must be valid XPM files.
 - `F` sets floor color, `C` sets ceiling color (RGB 0-255 separated by commas).
-- The map can take any shape as long as it's closed by walls (`1`), and contains exactly one player spawn point (`N`).
+- The map can take any shape as long as it's closed by walls (`1`), and contains exactly one player spawn point (`N`, `S`, `W`, `E`, you may put one of these in the map to change which direction the player faces as they spawn).
 
 ### Cleaning
 
